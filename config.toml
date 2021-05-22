@@ -1,0 +1,16 @@
+baseURL = "https://blog.raspikidd.com"
+languageCode = "en-gb"
+title = "EduKidd"
+theme = "base16"
+paginate = 5000
+
+[markup]
+    [markup.goldmark]
+        [markup.goldmark.renderer]
+            unsafe = true
+
+[params]
+    title = "EduKidd"
+    slogan = "Making programming fun through physical computing"
+    SEOTitle = "EduKidd blog"
+    keywords = "Kerry, Kidd, RaspberryPi, RaspiKidd, EduKidd, microbit, prgramming, coding, electronics, robots, robotics, Python, MicroPython, MakeCode, scratch"
