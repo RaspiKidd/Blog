@@ -1,5 +1,5 @@
 ---
-title: "Micro:bit Pins"
+title: "micro:bit Pins"
 date: 2021-06-20T21:04:11+01:00
 draft: true
 ---
