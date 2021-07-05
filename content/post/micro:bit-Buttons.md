@@ -15,7 +15,7 @@ Here is how to use the buttons within the Microsoft MakeCode editor.
 2. Click and drag the forever block from the coding area to the left side of the screen and drop it in the bin.
 3. Click on **Basic**. Click and drag a **show string "Hello!"** block to the coding area and attach it within the **on start** block.
 4. Within the **show string** block click on **"Hello!"** and type **Press button A**.
-5. Click on **Basic**. Click and drag a **show leds** block to the coding area and attach it under the **show string "Press button A"** block. 
+5. Click on **Basic**. Click and drag a **show leds** block to the coding area and attach it under the **show string "Press button A"** block.
 
 Create an arrow pointing left like this:
 
@@ -33,7 +33,7 @@ Create an arrow pointing right like this:
 10. Click on **Input**. Click and drag an **on button A pressed** block to the coding area and drop it. Click on the small arrow next to **A** and click on **B**.
 11. Click on **Basic**. Click and drag a **show icon block** to the coding area and attach it within the **on button B pressed** block. Change the icon by clicking on the white arrow to a **happy face**.
 12. Click on **Basic**. Click and drag a **show string "Hello!"** block to the coding area and attach it under the **show icon** block. Now change the text to read **Press button A + B**.
-13. Click on **Basic**. Click and drag a **show leds** block to the coding area and attach it under **show string "Press button A + B** block. 
+13. Click on **Basic**. Click and drag a **show leds** block to the coding area and attach it under **show string "Press button A + B** block.
 
 Create a right and left facing arrow.
 
@@ -96,7 +96,7 @@ There are two common ways to program the micro:but using microPython. The first 
 13. Type ```display.show(Image.HAPPY)``` This will show a happy face on the LED matrix.
 14. Type ```sleep(1000)``` this will pause the program for 1 second.
 15. Type ```display.scroll("Well done! You can now use buttons!")``` this will scroll accross the LED matrix.
-    
+
 Completed code
 
 ``` Python
