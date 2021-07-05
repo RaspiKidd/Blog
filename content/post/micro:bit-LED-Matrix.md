@@ -1,7 +1,7 @@
 ---
 title: "micro:bit LED Matrix"
 date: 2021-06-20T20:37:40+01:00
-draft: true
+draft: false
 ---
 
 Within this post we are going to get to know what we can do with the LED matrix on the front of the micro:bit.

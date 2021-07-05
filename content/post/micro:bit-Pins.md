@@ -1,7 +1,7 @@
 ---
 title: "micro:bit Pins"
 date: 2021-06-20T21:04:11+01:00
-draft: true
+draft: false
 ---
 
 This week we will take a look at what we can do with the General Purpose Input Output (GPIO) pins. You can do a lot of things using the pins at the bottom of the micro:bit including using touch, connecting them to tinfoil, fruit, headphones or other electronic components using crocodile clips. You can even use them with add-on boards like motor controllers, LED screens and more.

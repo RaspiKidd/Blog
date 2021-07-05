@@ -1,7 +1,7 @@
 ---
 title: "micro:bit Light Sensor"
 date: 2021-06-20T20:47:11+01:00
-draft: true
+draft: false
 ---
 
 This week in micro:bit Monday we are going to discover how to use the micro:bit to detect light.

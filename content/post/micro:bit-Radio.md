@@ -1,7 +1,7 @@
 ---
 title: "micro:bit Radio"
 date: 2021-06-20T21:18:42+01:00
-draft: true
+draft: false
 ---
 
 This week in micro:bit Monday we are going to discover how to use the micro:bit radio.

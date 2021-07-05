@@ -1,7 +1,7 @@
 ---
 title: "micro:bit Accelerometer"
 date: 2021-06-20T20:04:00+01:00
-draft: true
+draft: false
 ---
 
 This week we are going to look at the accelerometer. The accelerometer allows us to use the micro:bit to detect movement, whether this is counting steps, detecting if someone or something is falling.

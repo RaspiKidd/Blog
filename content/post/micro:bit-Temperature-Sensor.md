@@ -1,7 +1,7 @@
 ---
 title: "Micro:bit Temperature Sensor"
 date: 2021-06-20T21:31:58+01:00
-draft: true
+draft: false
 ---
 
 This week in micro:bit Monday we will be looking at the temperature sensor to detect what the temperature is and display it on the LED matrix.
