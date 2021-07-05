@@ -1,7 +1,7 @@
 ---
 title: "Robot Coding Lab"
 date: 2021-06-20T21:38:04+01:00
-draft: true
+draft: false
 ---
 
 On the 25th and 26th of January 2020, RaspiKidd ran a Robot Coding Lab within the V&A Dundee.
@@ -20,7 +20,8 @@ I was very surprised to find none of the kids trying to recreate the drawing rob
 
 ![Drawing an image on to a tablet ready for the robot to draw](/RobotCodingLab02.jpg)
 
-[Video roundup of Day 1](https://vimeo.com/464491837)
+<iframe src="https://player.vimeo.com/video/464491837" width="600" height="600" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+<p>Drawing Robot in Action.</p>
 
 The Giggle bot and K8 were coded using micro:bits and the micro:bit app on iPad. The sphero robots were coded using the sphero edu app on iPad.
 
@@ -49,7 +50,7 @@ To give the day more of a purpose we set the challenge of football-playing robot
 
 In the end, we only had two out of the three robots able to play football due to one team making their robot chassis too heavy that the motors couldn't turn properly.
 
-![The three robots](/RobotCodingLab04)
+![The three robots](/RobotCodingLab04.jpg)
 
 Once all the robots were finished we got on with the game of football though at one point this turned out more like a bit of sumo wrestling.
 
@@ -57,4 +58,4 @@ All in all the weekend was a huge success the kids had great fun and even though
 
 See the video below for a full highlights tour of the weekend.
 
-[Roundup of day 2](https://vimeo.com/389261711)
+<iframe src="https://player.vimeo.com/video/389261711?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="652" height="288" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Robot Coding Lab"></iframe>
