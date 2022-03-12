@@ -5,9 +5,9 @@ date: 2021-07-19
 draft: false    
 ---
 
-### The walking dancing football plying eyebrow twitching robot
+### The walking dancing football playing eyebrow twitching robot
 
-Marty is created by Robotical a small educational robotics company in Edinburgh Scotland founded by Dr Alexander Enoch in 2016. His main mission at the time was to develop a robot for his niece to code and make programming more like childs play.
+Marty is created by Robotical a small educational robotics company in Edinburgh Scotland founded by Dr Alexander Enoch in 2016. His main mission at the time was to develop a robot for his niece to code and make programming more like child's play.
 
 <!--more-->
 ![Marty box](/MartyBox.jpeg)
@@ -28,7 +28,7 @@ I found Marty very easy to get started with by mainly using the Marty app on the
 
 Marty is ready to code out of the box once you have paired him with a device but, you can also add more functionality to him by adding a Raspberry Pi and take your programming and Marty to the next level.
 
-The one I was really interested in though was being able to control Marty by using a micro:bit. Again this was easy to do by following the Scratch guides to download Scrtach link for your chosen platform and the HEX file to download on to the micro:bit. You can only use Marty and micro:bit through the Web App wihich required connecting Marty to the WIFI network. Again this is easy to do from within the Marty app.
+The one I was really interested in though was being able to control Marty by using a micro:bit. Again this was easy to do by following the Scratch guides to download Scratch link for your chosen platform and the HEX file to download on to the micro:bit. You can only use Marty and micro:bit through the Web App which required connecting Marty to the WIFI network. Again this is easy to do from within the Marty app.
 
 once all the set up was done I managed to code the micro:bit to control Marty by using the tilt functions. Example of the code below:
 
@@ -36,6 +36,6 @@ once all the set up was done I managed to code the micro:bit to control Marty by
 
 All in all I found Marty really easy to get up and running quickly which is a huge plus with impatient kids. He is a very robust robot and love the included stickers so he can be personalised. Marty is an expensive educational robot coming in at £300, but after having this time playing with him and seeing the build quality and amount of learning that are available and that he can provide years of fun and learning from programming in Scratch to Python with all of this he definitely starts showing his worth of the high price tag.
 
-### If you are looking to get a child into coding and robotics I would highly recommend Marty he has provded myself and a class of kids lots of fun over these last few weeks!
+### If you are looking to get a child into coding and robotics I would highly recommend Marty he has proved myself and a class of kids lots of fun over these last few weeks!
 
 Now that I've finished writing this review it is time to package Marty back up and send him back to Robotical for the next lucky person to play with. I would like to say a huge thank you to Robotical for allowing me to play and review Marty and I can't wait to see where they take Marty next.
