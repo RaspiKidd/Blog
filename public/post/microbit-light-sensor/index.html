@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="keywords" content="75,101,114,114,121,44,32,75,105,100,100,44,32,82,97,115,112,98,101,114,114,121,80,105,44,32,82,97,115,112,105,75,105,100,100,44,32,69,100,117,75,105,100,100,44,32,109,105,99,114,111,98,105,116,44,32,112,114,103,114,97,109,109,105,110,103,44,32,99,111,100,105,110,103,44,32,101,108,101,99,116,114,111,110,105,99,115,44,32,114,111,98,111,116,115,44,32,114,111,98,111,116,105,99,115,44,32,80,121,116,104,111,110,44,32,77,105,99,114,111,80,121,116,104,111,110,44,32,77,97,107,101,67,111,100,101,44,32,115,99,114,97,116,99,104">
+<meta name="generator" content="Hugo 0.92.1" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/css/style.css" type="text/css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700" type="text/css">
+<link rel="alternate" href="/index.xml" type="application/rss+xml" title="RaspiKidd Blog">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<title>micro:bit Light Sensor - RaspiKidd Blog</title>
+</head>
+<body>
+
+<header>
+  <div class="container clearfix">
+    <a class="path" href="https://blog.raspikidd.com">[RaspiKidd Blog]</a>
+    <span class="caret"># _</span>
+    <div class="right">
+      
+    </div>
+  </div>
+</header>
+
+<div class="container">
+
+
+<main role="main" class="article">
+  
+<article class="single" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="meta">
+
+    <span class="key">published on</span>
+    <span class="val"><time itemprop="datePublished" datetime="2021-06-20">June 20, 2021</time></span>
+
+
+
+  </div>
+  <h1 class="headline" itemprop="headline">micro:bit Light Sensor</h1>
+  <section class="body" itemprop="articleBody">
+    <p>This week in micro:bit Monday we are going to discover how to use the micro:bit to detect light.</p>
+<p>The micro:bit doesn&rsquo;t have a light sensor built in, but we can use the LED matrix to detect how much light there is in a room. This can be then used to make a night light, or a light for the front of a scooter or bike or even just attached to you and it will turn on when it starts to get dark.</p>
+<p>Let&rsquo;s take a look at the code.</p>
+<h2 id="makecode">MakeCode</h2>
+<ol>
+<li>Open <a href="https://makecode.microbit.org/#editor">MakeCode</a> within your favourite browser</li>
+<li>Click and drag <strong>on start</strong> to the left and drop it in the bin</li>
+<li>Click on <strong>Logic</strong> Click and drag a <strong>if true then else</strong> block to the coding area and drop it inside the <strong>forever</strong> block</li>
+<li>Click on <strong>Logic</strong> Click and drag a <strong>0 &lt; 0</strong> block to the code area and attach it within the ** if** block where it says <strong>true</strong></li>
+<li>Click on <strong>Input</strong> Click and drag a <strong>light level</strong> block to the code area and attach it wihtin the first <strong>0</strong> within the <strong>if</strong> block type <strong>100</strong> within the second <strong>0</strong></li>
+<li>Click on <strong>Basic</strong> Click and drag a <strong>show leds</strong> block to the code area and attach it within the <strong>if light level &lt; 100 then</strong> block Click on all the squares to turn them white</li>
+<li>Click on <strong>Basic</strong> Click on <strong>more</strong> Click and drag a <strong>clear screen</strong> block to the coding area and attach it within the <strong>else</strong> block.</li>
+</ol>
+<p>You are now ready to download the code to your micro:bit and detect light.</p>
+<p>Completed Code</p>
+<p><img src="/SensingLight01.png" alt="Completed Code"></p>
+<h2 id="edublocks">EduBlocks</h2>
+<ol>
+<li>Open <a href="app.edublocks.org">EduBlocks</a> within your favourite browser</li>
+<li>Click on <strong>Basic</strong> Click and drag a **from microbit import *** to the code area and drop it</li>
+<li>Click on <strong>Display</strong> click and drag an <strong>image = ()</strong> block to the coding area and attach it under the **from microbit import **. Replace all the <strong>0</strong> with a <strong>9</strong></li>
+<li>Click on <strong>Basic</strong> Click and drag a <strong>while True</strong> block to the coding area and attach it under the <strong>image = ()</strong> block</li>
+<li>Click on <strong>Basic</strong> Click and drag an <strong>if True</strong> block to the coding area and attach it within the the <strong>while True</strong> block</li>
+<li>Click on <strong>Basic</strong> click and drag a <strong>0 &lt; 0</strong> block to the code area and attach it within the <strong>True</strong> of the <strong>if</strong> block. Click on the first <strong>0</strong> and type <strong>display.read_light_level()</strong> click on the second <strong>0</strong> and type <strong>100</strong></li>
+<li>Click on <strong>Display</strong> Click and drag a <strong>display.show(Image.HAPPY)</strong> block to the code area and attach it within the <strong>if display.read_light_level() &lt; 100:</strong> block</li>
+<li>Click on <strong>Variables</strong> Click and drag a <strong>image</strong> block to the code area and attach it within the <strong>display.show</strong> block where it says <strong>Image.HAPPY</strong></li>
+<li>Click on <strong>Basic</strong> Click and drag an <strong>else</strong> block to the code area and attach it under the <strong>if</strong> block</li>
+<li>Click on <strong>Display</strong> Click and drag a <strong>display.clear()</strong> block to the code area and attach it within the <strong>else</strong> block.</li>
+</ol>
+<p>Your code is now complete and ready to download to your micro:bit.</p>
+<p>Completed Code</p>
+<p><img src="/SensingLight02.png" alt="Completed Code"></p>
+<h2 id="python">Python</h2>
+<ol>
+<li>Open your favourite Python editor</li>
+<li>Type <code>from microbit import *</code> This imports the micro:bit library</li>
+<li>Type <code>while True:</code> This creates a loop that runs while the conditions are True</li>
+<li>Type <code>if display.read_light_level() &lt; 100:</code> This checks that the light level is less than 100</li>
+<li>Type <code>display.show(Image(&quot;99999:&quot; &quot;99999:&quot; &quot;99999:&quot; &quot;99999:&quot; &quot;99999&quot;))</code> This makes the LED display light up if the light is less than 100</li>
+<li>Type <code>else:</code> This creates a condition for when the light is 100</li>
+<li>Type <code>display.clear()</code> this clears the LED matrix.</li>
+</ol>
+<p>Your code is now complete and ready to download and run on your micro:bit.</p>
+<p>Completed Code</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Python" data-lang="Python"><span style="color:#f92672">from</span> microbit <span style="color:#f92672">import</span> <span style="color:#f92672">*</span>
+
+<span style="color:#66d9ef">while</span> <span style="color:#66d9ef">True</span>:
+    <span style="color:#66d9ef">if</span> display<span style="color:#f92672">.</span>read_light_level() <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">100</span>:
+        display<span style="color:#f92672">.</span>show(Image(
+        <span style="color:#e6db74">&#34;99999:&#34;</span>
+        <span style="color:#e6db74">&#34;99999:&#34;</span>
+        <span style="color:#e6db74">&#34;99999:&#34;</span>
+        <span style="color:#e6db74">&#34;99999:&#34;</span>
+        <span style="color:#e6db74">&#34;99999&#34;</span>))
+    <span style="color:#66d9ef">else</span>:
+        display<span style="color:#f92672">.</span>clear()
+</code></pre></div><h2 id="conclusion">Conclusion</h2>
+<p>That&rsquo;s it for another week! Come back next week where we will be looking at the micro:bit tilt function.</p>
+  </section>
+</article>
+
+</main>
+
+</div>
+
+<footer>
+  <div class="container">
+    <span class="copyright">&copy; 2022 RaspiKidd Blog. All rights reserved</span>
+  </div>
+</footer>
+
+</body>
+</html>
+

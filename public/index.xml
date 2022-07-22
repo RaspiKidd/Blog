@@ -6,7 +6,19 @@
     <description>Recent content on RaspiKidd Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Thu, 18 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.raspikidd.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 22 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.raspikidd.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Jacdac Review</title>
+      <link>https://blog.raspikidd.com/post/jacdacreview/</link>
+      <pubDate>Fri, 22 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.raspikidd.com/post/jacdacreview/</guid>
+      <description>Connect and code electronics instantly The jacdac is a modular electronics kit for the BBC micro:bit and soon-to-be other platforms like the Raspberry pi.
+We received the jacdac starter kit A for this review.
+Starter kit A contains:
+ The jacdac adapter for the micro:bit v2 1 x Slider 1 x Rotary Button 1x RGB Ring 2 x Keycap Buttons 1 x Magnet Sensor 1 x Hub 1 x Light Sensor 5 x Cables to connect the modules to the jacdac  Within 5 minutes of connecting the jacdac to the micro:bit, loading the MakeCode editor and adding the jacdac extension Kerry realised this was no ordinary micro:bit add-on.</description>
+    </item>
+    
     <item>
       <title>Raspberry Pi for Dummies Book Review</title>
       <link>https://blog.raspikidd.com/post/raspberrypiforddummiesreview/</link>
@@ -23,8 +35,8 @@ One thing I love about this book is that you do not need to read it from cover t
       <pubDate>Mon, 19 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://blog.raspikidd.com/post/marty-review/</guid>
-      <description>&lt;h3 id=&#34;the-walking-dancing-football-plying-eyebrow-twitching-robot&#34;&gt;The walking dancing football plying eyebrow twitching robot&lt;/h3&gt;
-&lt;p&gt;Marty is created by Robotical a small educational robotics company in Edinburgh Scotland founded by Dr Alexander Enoch in 2016. His main mission at the time was to develop a robot for his niece to code and make programming more like childs play.&lt;/p&gt;</description>
+      <description>&lt;h3 id=&#34;the-walking-dancing-football-playing-eyebrow-twitching-robot&#34;&gt;The walking dancing football playing eyebrow twitching robot&lt;/h3&gt;
+&lt;p&gt;Marty is created by Robotical a small educational robotics company in Edinburgh Scotland founded by Dr Alexander Enoch in 2016. His main mission at the time was to develop a robot for his niece to code and make programming more like child&amp;rsquo;s play.&lt;/p&gt;</description>
     </item>
     
     <item>

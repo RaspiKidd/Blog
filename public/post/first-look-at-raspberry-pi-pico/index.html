@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="keywords" content="75,101,114,114,121,44,32,75,105,100,100,44,32,82,97,115,112,98,101,114,114,121,80,105,44,32,82,97,115,112,105,75,105,100,100,44,32,69,100,117,75,105,100,100,44,32,109,105,99,114,111,98,105,116,44,32,112,114,103,114,97,109,109,105,110,103,44,32,99,111,100,105,110,103,44,32,101,108,101,99,116,114,111,110,105,99,115,44,32,114,111,98,111,116,115,44,32,114,111,98,111,116,105,99,115,44,32,80,121,116,104,111,110,44,32,77,105,99,114,111,80,121,116,104,111,110,44,32,77,97,107,101,67,111,100,101,44,32,115,99,114,97,116,99,104">
+<meta name="generator" content="Hugo 0.92.1" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/css/style.css" type="text/css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700" type="text/css">
+<link rel="alternate" href="/index.xml" type="application/rss+xml" title="RaspiKidd Blog">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<title>First Look at Raspberry Pi Pico - RaspiKidd Blog</title>
+</head>
+<body>
+
+<header>
+  <div class="container clearfix">
+    <a class="path" href="https://blog.raspikidd.com">[RaspiKidd Blog]</a>
+    <span class="caret"># _</span>
+    <div class="right">
+      
+    </div>
+  </div>
+</header>
+
+<div class="container">
+
+
+<main role="main" class="article">
+  
+<article class="single" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="meta">
+
+    <span class="key">published on</span>
+    <span class="val"><time itemprop="datePublished" datetime="2021-06-20">June 20, 2021</time></span>
+
+
+
+  </div>
+  <h1 class="headline" itemprop="headline">First Look at Raspberry Pi Pico</h1>
+  <section class="body" itemprop="articleBody">
+    <p>The Pico is a brand new microcontroller from the Raspberry Pi Foundation.  It is based on the RP2040 chip developed by the Raspberry Pi Foundation here within the UK.</p>
+<h2 id="specs">Specs</h2>
+<ul>
+<li>Dual cores Arm cortex M0+ running at 133MHz</li>
+<li>264kB RAM (Random Access Memory)</li>
+<li>26 GPIO (Genral Purpose Input Output) pins
+<ul>
+<li>2 x I2C (Inter- Integrated Circuit)</li>
+<li>2 x SPI (Serial Peripheral Interface)</li>
+<li>2 x UART (Universal Asynchronous Receiver/Transmitter)</li>
+<li>3 x Analogue</li>
+</ul>
+</li>
+<li>2Mb flash storage for your programs and data</li>
+</ul>
+<p><img src="/Pico01.jpg" alt="Raspberry Pi Pico"></p>
+<h2 id="what-can-it-do">What can it do?</h2>
+<p>The Raspberry PI Pico can become the brains of your next project whether it be a robot, DIY home automation gadget or an electronic musical instrument like a theremin and much more.</p>
+<h2 id="how-to-program-the-pico">How to Program the Pico?</h2>
+<p>The Pico can be programmed using MicroPython, C and C++ from launch. We will look at MicroPython to program the Pico later within this guide.</p>
+<h2 id="soldering-the-pins">Soldering the Pins</h2>
+<p>To solder the pins onto the Pico you will need:</p>
+<ul>
+<li>Soldering iron</li>
+<li>Solder</li>
+<li>Header Pins</li>
+<li>The Pico board</li>
+<li>Breadboard</li>
+</ul>
+<p>Breadboard may sound a little strange, but it helps keep your Pico board and pins steady while you solder them.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-5mHSnBScS4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h2 id="installing-micropython">Installing MicroPython</h2>
+<ol>
+<li>Plug the Pico into your computer while holding down the BOOTSEL button on the front of the board</li>
+<li>Let go of the BOOTSEL button and you should see the Pico pop-up as a removable drive like you have plugged in a pen drive named RPI-RP2</li>
+<li>Open up the Pico drive and click on INDEX.HTM. This will open up a web page telling you all about the Pico</li>
+<li>Scroll down the page and click on the Getting Started with MicroPython tab</li>
+<li>Click on Download UF2 file button and save it to your RPI-RP2 drive. The Pico will reboot and you are now running MicroPython on your Pico.</li>
+</ol>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dDwv7UvJ1QY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h2 id="installing-the-thonny-python-editor">Installing The Thonny Python Editor</h2>
+<ol>
+<li>Plug the Pico into your computer while holding down the BOOTSEL button on the front of the board</li>
+<li>Let go of the BOOTSEL button and you should see the Pico pop-up as a removable drive like you have plugged in a pen drive named RPI-RP2</li>
+<li>Open up the Pico drive and click on INDEX.HTM. This will open up a web page telling you all about the Pico</li>
+<li>Scroll down the page and click on the Getting Started with MicroPython tab</li>
+<li>Click on Download UF2 file button and save it to your RPI-RP2 drive. The Pico will reboot and you are now running MicroPython on your Pico.</li>
+</ol>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0FirNXYtPOY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h2 id="setting-up-thonny">Setting up Thonny</h2>
+<ol>
+<li>Click on Thonny to open the editor</li>
+<li>Make sure your Pico is plugged into your computer</li>
+<li>Click on Python 3.xx down in the bottom right corner. This is where we can change the version of Python that we are programming in. From the menu that appears click on MicroPython(Raspberry Pi Pico).</li>
+</ol>
+<p>We are now ready to program our Pico.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/K-BSwf4c7VA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h2 id="coding-the-led">Coding the LED</h2>
+<p>The Pico has a built-in LED that we can program Let&rsquo;s see how to do this.</p>
+<p>Type the following code:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Python" data-lang="Python"><span style="color:#f92672">import</span> machine
+
+led_onboard <span style="color:#f92672">=</span> machine<span style="color:#f92672">.</span>Pin(<span style="color:#ae81ff">25</span>, machine<span style="color:#f92672">.</span>Pin<span style="color:#f92672">.</span>OUT)
+led_onboard<span style="color:#f92672">.</span>value(<span style="color:#ae81ff">1</span>)
+</code></pre></div><iframe width="560" height="315" src="https://www.youtube.com/embed/-K-WwZQKP6E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h2 id="wrapping-up">Wrapping Up</h2>
+<p>That is us completed the first steps to getting started with the Raspberry Pi Pico.</p>
+<p>Follow me on <a href="https://twitter.com/RaspiKidd">Twitter</a> and <a href="https://www.instagram.com/raspikidd/">Instagram</a> to see more of my discoveries with the Pico over the coming weeks.</p>
+  </section>
+</article>
+
+</main>
+
+</div>
+
+<footer>
+  <div class="container">
+    <span class="copyright">&copy; 2022 RaspiKidd Blog. All rights reserved</span>
+  </div>
+</footer>
+
+</body>
+</html>
+

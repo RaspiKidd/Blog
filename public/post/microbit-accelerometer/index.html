@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="keywords" content="75,101,114,114,121,44,32,75,105,100,100,44,32,82,97,115,112,98,101,114,114,121,80,105,44,32,82,97,115,112,105,75,105,100,100,44,32,69,100,117,75,105,100,100,44,32,109,105,99,114,111,98,105,116,44,32,112,114,103,114,97,109,109,105,110,103,44,32,99,111,100,105,110,103,44,32,101,108,101,99,116,114,111,110,105,99,115,44,32,114,111,98,111,116,115,44,32,114,111,98,111,116,105,99,115,44,32,80,121,116,104,111,110,44,32,77,105,99,114,111,80,121,116,104,111,110,44,32,77,97,107,101,67,111,100,101,44,32,115,99,114,97,116,99,104">
+<meta name="generator" content="Hugo 0.92.1" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/css/style.css" type="text/css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700" type="text/css">
+<link rel="alternate" href="/index.xml" type="application/rss+xml" title="RaspiKidd Blog">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<title>micro:bit Accelerometer - RaspiKidd Blog</title>
+</head>
+<body>
+
+<header>
+  <div class="container clearfix">
+    <a class="path" href="https://blog.raspikidd.com">[RaspiKidd Blog]</a>
+    <span class="caret"># _</span>
+    <div class="right">
+      
+    </div>
+  </div>
+</header>
+
+<div class="container">
+
+
+<main role="main" class="article">
+  
+<article class="single" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="meta">
+
+    <span class="key">published on</span>
+    <span class="val"><time itemprop="datePublished" datetime="2021-06-20">June 20, 2021</time></span>
+
+
+
+  </div>
+  <h1 class="headline" itemprop="headline">micro:bit Accelerometer</h1>
+  <section class="body" itemprop="articleBody">
+    <p>This week we are going to look at the accelerometer. The accelerometer allows us to use the micro:bit to detect movement, whether this is counting steps, detecting if someone or something is falling.</p>
+<p>There are two ways to use the accelerometer, either through the shake function or the acceleration block, We will be consentrating on the accelerometer block.</p>
+<p>Let&rsquo;s take a look at the code!</p>
+<h2 id="makecode">MakeCode</h2>
+<ol>
+<li>Open <a href="https://makecode.microbit.org/#editor">MakeCode</a> editor within your favourite browser</li>
+<li>Click and drag the <strong>on start</strong> block to the left and drop it in the bin</li>
+<li>Click on <strong>Variables</strong> Click on <strong>Make a Variable&hellip;</strong> Type <strong>reading</strong> and click on <strong>Ok</strong></li>
+<li>Click on <strong>Variables</strong> Click on <strong>set reading to 0</strong> and drag it to the coding area and attach it within the <strong>forever</strong> block</li>
+<li>Click on <strong>Input</strong> Click and drag <strong>acceleration (mg) x</strong> to the coding area and attach it within the <strong>0</strong> of the <strong>set reading to</strong> block</li>
+<li>Click on <strong>Logic</strong> click and drag a <strong>if true then else</strong> block to the coding area and attach it under <strong>set reading to acceleration (mg) x</strong> block</li>
+<li>Click on <strong>Logic</strong> Click and drag a <strong>0 &lt; 0</strong> block to the coding area and attach it within the <strong>true</strong> of the <strong>if then</strong> block</li>
+<li>Click on <strong>Variables</strong> click and drag <strong>reading</strong> to the coding area and attach it within the first <strong>0</strong> of the <strong>if then</strong> block</li>
+<li>Click on <strong>Basic</strong> Click and drag a <strong>show string &ldquo;Hello&rdquo;</strong> block to the coding area and attach it under <strong>if reading &lt; 0 then</strong> Click where it says <strong>Hello</strong> and type <strong>R</strong> Click on the small <strong>+</strong> below <strong>else</strong></li>
+<li>Click on <strong>Logic</strong> Click and drag a <strong>0 &lt; 0</strong> block to the code area and attach it within the <strong>blank space</strong> of the <strong>else if</strong> block</li>
+<li>Click on <strong>Variables</strong> click and drag a <strong>reading</strong> block to the coding area and attach it within the first <strong>0</strong> of the <strong>else if</strong> block</li>
+<li>Click on <strong>Basic</strong> Click and drag a <strong>show string &ldquo;Hello&rdquo;</strong> block to the coding area and attach it under <strong>else if reading &gt; 0 then</strong> Click on **Hello and type <strong>L</strong></li>
+<li>Click on <strong>Basic</strong> Click and drag a <strong>show string &ldquo;Hello</strong> block to the code area and click on <strong>Hello</strong> and type <strong>-</strong></li>
+</ol>
+<p>Your code is now ready to download to your micro:bit and test out.</p>
+<p>Completed Code</p>
+<p><img src="/Accelerometer01.png" alt="Completed Code in MakeCode"></p>
+<h2 id="edublocks">EduBlocks</h2>
+<ol>
+<li>Open <a href="http://app.edublocks.org/">EduBlocks</a> within your favourite browser and click on micro:bit</li>
+<li>Click on <strong>Basic</strong> Click on <strong>from microbit import <code>*</code></strong> and drop it within  the coding area</li>
+<li>Click on <strong>Basic</strong> Click on <strong>while True:</strong> and attach it under <strong>from microbit import <code>*</code></strong></li>
+<li>Click on <strong>Variables</strong> Click on <strong>Create variable&hellip;</strong> Type <strong>reading</strong> and click on <strong>OK</strong></li>
+<li>Click on <strong>Variables</strong> Click and drag a <strong>reading = 0</strong> block to the code area and attach it within <strong>while True</strong></li>
+<li>Click on <strong>Accelerometer</strong> Click and drag a <strong>accelerometer.get_x()</strong> block to the code area and attach it within the <strong>0</strong> of the <strong>reading = 0</strong> block</li>
+<li>Click on <strong>Basic</strong> Click and drag an <strong>if True:</strong> block to the coding area and attach it under <strong>reading = accelerometer.get_x()</strong></li>
+<li>Click on <strong>Basic</strong> Click and drag a <strong>0 == 0</strong> block to the coding area and attach it within <strong>True</strong> of the <strong>if True:</strong> block. Click on the little arrrow next to <strong>==</strong> and click on <strong>&lt;</strong></li>
+<li>Click on <strong>Variables</strong> Click and drag <strong>reading</strong> to the code area and attach it within the first <strong>0</strong> of the <strong>if</strong> block</li>
+<li>Click on <strong>Display</strong> Click on <strong>display.show(Image.HAPPY)</strong> and drag it to the coding area and attach it under <strong>if reading &lt; 0:</strong> Click where it says <strong>Image.HAPPY</strong> and type <strong>&ldquo;R&rdquo;</strong></li>
+<li>Click on <strong>Basic</strong> Click and drag a <strong>elif True:</strong> block to the coding area and attach it under the <strong>if reading &lt; 0:</strong> block</li>
+<li>Click on <strong>Basic</strong> Click and drag a <strong>0 == 0</strong> block to the coding area and attach it within the <strong>True</strong> of the <strong>elif True</strong> block. Click on the small arrow next to <strong>==</strong> and click on <strong>&gt;</strong></li>
+<li>Click on <strong>Variables</strong> Click and drag a <strong>reading</strong> block to the code area and attach it within the first <strong>0</strong> of the <strong>elif</strong></li>
+<li>Click on <strong>Display</strong> Click and drag a <strong>display.show(Image.HAPPY)</strong> to the code area and attach it within the <strong>elif reading &gt; 0</strong> block Click on <strong>Image.HAPPY</strong> and type <strong>&ldquo;L&rdquo;</strong></li>
+<li>Click on <strong>Basic</strong> Click and drag a <strong>else:</strong> block to the code area and attach it under the <strong>elif reading &gt; 0</strong></li>
+<li>Click on <strong>Display</strong> Click and drag a <strong>display.show(Image.HAPPY)</strong> block to the code area and attach it within the <strong>else:</strong> block. Click on <strong>Image.Happy</strong> and type <strong>&quot;-&quot;</strong></li>
+</ol>
+<p>Your code is now complete and read to download to your micro:bit to test it.</p>
+<p>Completed Code</p>
+<p><img src="/Accelerometer02.png" alt="Completed Code in EduBlocks"></p>
+<h2 id="python">Python</h2>
+<ol>
+<li>Open up your favourite Python editor for the micro:bit</li>
+<li>Type <code>from microbit import *</code> This imports the micro:bit library to use within python so we can program with the micro:bit</li>
+<li>Type <code>while True:</code> This create a loop that will go on forever</li>
+<li>Type <code>reading = accelerometer.get_x()</code> This create a variable callled reading and sets it to the x axis of the accelerometer</li>
+<li>Type <code>if reading &lt; 0:</code> This creates a statement to check if the micro:bit is tilted to the left</li>
+<li>Type <code>display.show(&quot;R&quot;)</code> If the micro:bit is tilted to the left it displays an &ldquo;R&rdquo; on screen to get you to tilt it back to the centre</li>
+<li>Type <code>elif reading &gt; 0:</code> This checks to to see if the micro:bit is tilted to the right</li>
+<li>Type <code>display.show(&quot;L&quot;)</code> if the micro:bit is tilted to the right it displays an &ldquo;L&rdquo; on screen to get you to tilt the micro:bit back to the centre</li>
+<li>Type <code>else:</code> This checks to make sure the micro:bit is centre</li>
+<li>Type <code>display.show(&quot;-&quot;)</code> This displays a line on the screen if the micro:bit is sat centered.</li>
+</ol>
+<p>Your code is now ready to download to the micro:bit and test out.</p>
+<h3 id="completed-code">Completed Code</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Python" data-lang="Python"><span style="color:#f92672">from</span> microbit <span style="color:#f92672">import</span> <span style="color:#f92672">*</span>
+
+<span style="color:#66d9ef">while</span> <span style="color:#66d9ef">True</span>:
+    reading <span style="color:#f92672">=</span> accelerometer<span style="color:#f92672">.</span>get_x()
+    <span style="color:#66d9ef">if</span> reading <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">0</span>:
+        display<span style="color:#f92672">.</span>show(<span style="color:#e6db74">&#34;R&#34;</span>)
+    <span style="color:#66d9ef">elif</span> reading <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>:
+        display<span style="color:#f92672">.</span>show(<span style="color:#e6db74">&#34;L&#34;</span>)
+    <span style="color:#66d9ef">else</span>:
+        display<span style="color:#f92672">.</span>show(<span style="color:#e6db74">&#34;-&#34;</span>)
+</code></pre></div><h2 id="conclusion">Conclusion</h2>
+<p>You may have noticed that we have just created a simple spirit level, so you can now go and check whether the surfaces within your house or classroom are level.</p>
+<p>I have shown you one way here to use the accelerometer another way is to use the <strong>on shake</strong> function.</p>
+<p>Hope you enjoyed this and come back next week where we explore the temperature sensor.</p>
+  </section>
+</article>
+
+</main>
+
+</div>
+
+<footer>
+  <div class="container">
+    <span class="copyright">&copy; 2022 RaspiKidd Blog. All rights reserved</span>
+  </div>
+</footer>
+
+</body>
+</html>
+

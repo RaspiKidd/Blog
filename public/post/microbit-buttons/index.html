@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="keywords" content="75,101,114,114,121,44,32,75,105,100,100,44,32,82,97,115,112,98,101,114,114,121,80,105,44,32,82,97,115,112,105,75,105,100,100,44,32,69,100,117,75,105,100,100,44,32,109,105,99,114,111,98,105,116,44,32,112,114,103,114,97,109,109,105,110,103,44,32,99,111,100,105,110,103,44,32,101,108,101,99,116,114,111,110,105,99,115,44,32,114,111,98,111,116,115,44,32,114,111,98,111,116,105,99,115,44,32,80,121,116,104,111,110,44,32,77,105,99,114,111,80,121,116,104,111,110,44,32,77,97,107,101,67,111,100,101,44,32,115,99,114,97,116,99,104">
+<meta name="generator" content="Hugo 0.92.1" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/css/style.css" type="text/css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700" type="text/css">
+<link rel="alternate" href="/index.xml" type="application/rss+xml" title="RaspiKidd Blog">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<title>micro:bit Buttons - RaspiKidd Blog</title>
+</head>
+<body>
+
+<header>
+  <div class="container clearfix">
+    <a class="path" href="https://blog.raspikidd.com">[RaspiKidd Blog]</a>
+    <span class="caret"># _</span>
+    <div class="right">
+      
+    </div>
+  </div>
+</header>
+
+<div class="container">
+
+
+<main role="main" class="article">
+  
+<article class="single" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="meta">
+
+    <span class="key">published on</span>
+    <span class="val"><time itemprop="datePublished" datetime="2021-06-20">June 20, 2021</time></span>
+
+
+
+  </div>
+  <h1 class="headline" itemprop="headline">micro:bit Buttons</h1>
+  <section class="body" itemprop="articleBody">
+    <p>Welcome to another micro:bit Monday post. Today we will be looking at what we can do with the buttons on the micro:bit.</p>
+<h2 id="makecode">MakeCode</h2>
+<p>Here is how to use the buttons within the Microsoft MakeCode editor.</p>
+<ol>
+<li>Open <a href="https://makecode.microbit.org">MakeCode</a> within your favourite browser.</li>
+<li>Click and drag the forever block from the coding area to the left side of the screen and drop it in the bin.</li>
+<li>Click on <strong>Basic</strong>. Click and drag a <strong>show string &ldquo;Hello!&quot;</strong> block to the coding area and attach it within the <strong>on start</strong> block.</li>
+<li>Within the <strong>show string</strong> block click on <strong>&ldquo;Hello!&quot;</strong> and type <strong>Press button A</strong>.</li>
+<li>Click on <strong>Basic</strong>. Click and drag a <strong>show leds</strong> block to the coding area and attach it under the <strong>show string &ldquo;Press button A&rdquo;</strong> block.</li>
+</ol>
+<p>Create an arrow pointing left like this:</p>
+<p><img src="/Buttons01.png" alt="Left-facing arrow"></p>
+<ol start="6">
+<li>Click on <strong>Input</strong>. Click and drag an <strong>on button A pressed</strong> block to the coding area and drop it.</li>
+<li>Click on <strong>Basic</strong>. Click and drag a <strong>show icon block</strong> to the coding area and attach it within the <strong>on button A pressed</strong> block. Change the icon by clicking on the white arrow to a <strong>happy face</strong>.</li>
+<li>Click on <strong>Basic</strong>. Click and drag a <strong>show string &ldquo;Hello!&quot;</strong> block to the coding area and attach it under the <strong>show icon</strong> block. Now change the text to read <strong>Press button B</strong>.</li>
+<li>Click on <strong>Basic</strong>. Click and drag a <strong>show leds</strong> block to the coding area and attach it under <strong>show string &ldquo;Press button B</strong> block.</li>
+</ol>
+<p>Create an arrow pointing right like this:</p>
+<p><img src="/Buttons02.png" alt="Right-facing arrow"></p>
+<ol start="10">
+<li>Click on <strong>Input</strong>. Click and drag an <strong>on button A pressed</strong> block to the coding area and drop it. Click on the small arrow next to <strong>A</strong> and click on <strong>B</strong>.</li>
+<li>Click on <strong>Basic</strong>. Click and drag a <strong>show icon block</strong> to the coding area and attach it within the <strong>on button B pressed</strong> block. Change the icon by clicking on the white arrow to a <strong>happy face</strong>.</li>
+<li>Click on <strong>Basic</strong>. Click and drag a <strong>show string &ldquo;Hello!&quot;</strong> block to the coding area and attach it under the <strong>show icon</strong> block. Now change the text to read <strong>Press button A + B</strong>.</li>
+<li>Click on <strong>Basic</strong>. Click and drag a <strong>show leds</strong> block to the coding area and attach it under <strong>show string &ldquo;Press button A + B</strong> block.</li>
+</ol>
+<p>Create a right and left facing arrow.</p>
+<p><img src="/Buttons04.png" alt="Left and right-facing arrows"></p>
+<ol start="4">
+<li>Click on <strong>Input</strong>. Click and drag an <strong>on button A pressed</strong> block to the coding area and drop it. Click on the small arrow next to <strong>A</strong> and click on <strong>A+B</strong>.</li>
+<li>Click on <strong>Basic</strong>. Click and drag a <strong>show icon block</strong> to the coding area and attach it within the <strong>on button A+B pressed</strong> block. Change the icon by clicking on the white arrow to a <strong>happy face</strong>.</li>
+<li>Click on <strong>Basic</strong>. Click and drag a <strong>show string &ldquo;Hello!&quot;</strong> block to the coding area and attach it under the <strong>show icon</strong> block. Now change the text to read <strong>You now know how to use the buttons!</strong>.</li>
+</ol>
+<p>Your completed code should look like this:</p>
+<p><img src="/Buttons05.png" alt="Completed Code"></p>
+<h2 id="edublocks">EduBlocks</h2>
+<p>Here is how to use buttons within EduBlocks.</p>
+<ol>
+<li>Open <a href="http://app.edublocks.org/">EduBlocks</a> within your favourite browser and click on micro:bit.</li>
+<li>Click on <strong>Basic</strong>. Click and drag a **from microbit import *** block to the coding area and drop it.</li>
+<li>Click on <strong>Display</strong>. Click and drag a <strong>display.scroll(&ldquo;Hello World&rdquo;)</strong> block to the coding area and attach it under the **from microbit import *** block.</li>
+<li>Click where it says <strong>Hello World</strong> and delete it, now type <strong>Press button A</strong>.</li>
+<li>Click on <strong>Basic</strong>. Click and drag a <strong>sleep(1000)</strong> block to the coding area and attach it under <strong>display.scroll(&ldquo;Press button A&rdquo;)</strong>.</li>
+<li>Click on <strong>Display</strong>. Click and drag a <strong>display.show(Image.HAPPY)</strong> block to the coding area and attach it under <strong>sleep(1000)</strong> block. Click on where it says <strong>Image.HAPPY</strong> and delete it, now type <strong>Image.ARROW_W</strong>.</li>
+<li>Click on <strong>Basic</strong>. Click and drag a <strong>while True:</strong> block to the coding area and attach it under <strong>display.show(Image.ARROW_W)</strong> block.</li>
+<li>Click on <strong>Basic</strong>. Click and drag an <strong>if True:</strong> block to the coding area and attach it within the <strong>while True:</strong> block.</li>
+<li>Click on <strong>Buttons</strong>. Click and drag a <strong>button_a.is_pressed()</strong> block to the coding area and attach it within the <strong>True</strong> of the <strong>if True:</strong> block.</li>
+<li>Click on <strong>Display</strong>. Click and drag a <strong>display.show(Image.HAPPY)</strong> block to the coding area and attach it within <strong>if button_a.is_pressed</strong> block.</li>
+<li>Click on <strong>Basic</strong>. Click and drag a <strong>sleep(1000)</strong> block to the coding area and attach it under <strong>display.show(Image.HAPPY)</strong></li>
+<li>Click on <strong>Display</strong>. Click and drag a <strong>display.scroll (&ldquo;Hello World&rdquo;)</strong> block to the coding area and attach it under the <strong>sleep(1000)</strong> block.</li>
+<li>Click where it reads <strong>Hello World</strong> and delete it, now type <strong>Press button B</strong>.</li>
+<li>Click on <strong>Display</strong>. Click and drag a <strong>display.show(Image.HAPPY)</strong> block to the coding area and attach it under <strong>display.scroll(&ldquo;press button B&rdquo;)</strong>.</li>
+<li>Click where it says <strong>Image.HAPPY</strong> and delete it, now type <strong>Image.ARROW_E</strong>.</li>
+<li>Click on <strong>Basic</strong>. Click and drag an <strong>if True:</strong> block to the coding area and attach it under the <strong>if button_a.is_pressed():</strong> block.</li>
+<li>Click on <strong>Buttons</strong>. Click and drag a <strong>button_a.is_pressed()</strong> block to the coding area and attach it within the <strong>True</strong> of the <strong>if True:</strong> block. Click on the little <strong>arrow</strong> next to <strong>a</strong> and click on <strong>b</strong>.</li>
+<li>Click on <strong>Display</strong>. Click and drag a <strong>display.show(Image.HAPPY)</strong> block to the coding area and attach it within <strong>if button_b.is_pressed</strong> block.</li>
+<li>Click on <strong>Basic</strong>. Click and drag a <strong>sleep(1000)</strong> block to the coding area and attach it under <strong>display.show(Image.HAPPY)</strong></li>
+<li>Click on <strong>Display</strong>. Click and drag a <strong>display.scroll (&ldquo;Hello World&rdquo;)</strong> block to the coding area and attach it under the <strong>sleep(1000)</strong> block.</li>
+<li>Click where it reads <strong>Hello World</strong> and delete it, now type <strong>Well done! you now know how to use buttons!</strong></li>
+</ol>
+<p>Your completed code should look like this:</p>
+<p><img src="/Buttons06.png" alt="Completed EduBlocks Code"></p>
+<h2 id="python">Python</h2>
+<p>There are two common ways to program the micro:but using microPython. The first one is to open the web version in your browser <a href="https://python.microbit.org/v/1">Python</a> or by downloading the Mu editor from <a href="https://codewith.mu/en/download">downloading Mu</a> (within this post I am using Mu)</p>
+<ol>
+<li>Open your preferred method for programming Python.</li>
+<li>Type <code>from microbit import *</code> this will import the micro:bit library to use with Python and press enter.</li>
+<li>Type <code>display.scroll(&quot;Press button A</code> this will display <strong>press button A</strong> scrolling accross the LED matrix.</li>
+<li>Type <code>sleep(1000)</code> This will pause the program for 1 second.</li>
+<li>Type <code>display.show(Image.ARROW_W)</code> this will display a left facing arrow on the LED matrix.</li>
+<li>Type <code>while True:</code> this will make the code loop forever.</li>
+<li>type <code>if button_a.is_pressed():</code> this will run the next lot of code only if the <strong>A</strong> button on the micro:bit has been pressed.</li>
+<li>Type <code>display.show(Image.HAPPY)</code> this will show a happy face on the LED matrix.</li>
+<li>Type <code>sleep(1000)</code> this will pause the program for one second.</li>
+<li>Type <code>display.scroll(&quot;Press button B&quot;)</code> this is will scroll <strong>Press button B</strong> accross the LED display.</li>
+<li>Type <code>display.show(Image.ARROW_E)</code> this will display a right facing arrow on the LED matrix.</li>
+<li>Type <code>if button_b.is_pressed():</code> this will execute the next bit of code if <strong>button B</strong> is pressed.</li>
+<li>Type <code>display.show(Image.HAPPY)</code> This will show a happy face on the LED matrix.</li>
+<li>Type <code>sleep(1000)</code> this will pause the program for 1 second.</li>
+<li>Type <code>display.scroll(&quot;Well done! You can now use buttons!&quot;)</code> this will scroll accross the LED matrix.</li>
+</ol>
+<p>Completed code</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Python" data-lang="Python"><span style="color:#f92672">from</span> microbit <span style="color:#f92672">import</span> <span style="color:#f92672">*</span>
+
+display<span style="color:#f92672">.</span>scroll(<span style="color:#e6db74">&#34;Press button A&#34;</span>)
+sleep(<span style="color:#ae81ff">1000</span>)
+display<span style="color:#f92672">.</span>show(Image<span style="color:#f92672">.</span>ARROW_W)
+<span style="color:#66d9ef">while</span> <span style="color:#66d9ef">True</span>:
+    <span style="color:#66d9ef">if</span> button_a<span style="color:#f92672">.</span>is_pressed():
+        display<span style="color:#f92672">.</span>show(Image<span style="color:#f92672">.</span>HAPPY)
+        sleep(<span style="color:#ae81ff">1000</span>)
+        display<span style="color:#f92672">.</span>scroll(<span style="color:#e6db74">&#34;Press button B&#34;</span>)
+        display<span style="color:#f92672">.</span>show(Image<span style="color:#f92672">.</span>ARROW_E)
+    <span style="color:#66d9ef">if</span> button_b<span style="color:#f92672">.</span>is_pressed():
+        display<span style="color:#f92672">.</span>show(Image<span style="color:#f92672">.</span>HAPPY)
+        sleep(<span style="color:#ae81ff">1000</span>)
+        display<span style="color:#f92672">.</span>scroll(<span style="color:#e6db74">&#34;Well done! You can now use buttons!&#34;</span>)
+</code></pre></div><h2 id="challenge">Challenge</h2>
+<p>Now that you know how to use the buttons on your micro:bit why not go back to to last weeks challenge and add more to your name badge so different messages or images display when you press a button.</p>
+<p>Come back next week to learn about the radio function of the micro:bit.</p>
+  </section>
+</article>
+
+</main>
+
+</div>
+
+<footer>
+  <div class="container">
+    <span class="copyright">&copy; 2022 RaspiKidd Blog. All rights reserved</span>
+  </div>
+</footer>
+
+</body>
+</html>
+

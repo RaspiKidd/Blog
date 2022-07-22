@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="keywords" content="75,101,114,114,121,44,32,75,105,100,100,44,32,82,97,115,112,98,101,114,114,121,80,105,44,32,82,97,115,112,105,75,105,100,100,44,32,69,100,117,75,105,100,100,44,32,109,105,99,114,111,98,105,116,44,32,112,114,103,114,97,109,109,105,110,103,44,32,99,111,100,105,110,103,44,32,101,108,101,99,116,114,111,110,105,99,115,44,32,114,111,98,111,116,115,44,32,114,111,98,111,116,105,99,115,44,32,80,121,116,104,111,110,44,32,77,105,99,114,111,80,121,116,104,111,110,44,32,77,97,107,101,67,111,100,101,44,32,115,99,114,97,116,99,104">
+<meta name="generator" content="Hugo 0.92.1" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/css/style.css" type="text/css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700" type="text/css">
+<link rel="alternate" href="/index.xml" type="application/rss+xml" title="RaspiKidd Blog">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<title>Installing Mu Python Editor - RaspiKidd Blog</title>
+</head>
+<body>
+
+<header>
+  <div class="container clearfix">
+    <a class="path" href="https://blog.raspikidd.com">[RaspiKidd Blog]</a>
+    <span class="caret"># _</span>
+    <div class="right">
+      
+    </div>
+  </div>
+</header>
+
+<div class="container">
+
+
+<main role="main" class="article">
+  
+<article class="single" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="meta">
+
+    <span class="key">published on</span>
+    <span class="val"><time itemprop="datePublished" datetime="2021-06-08">June 08, 2021</time></span>
+
+
+
+  </div>
+  <h1 class="headline" itemprop="headline">Installing Mu Python Editor</h1>
+  <section class="body" itemprop="articleBody">
+    <p>Mu is a simple code editor developed in Python for Python, it has built-in support for Adafruit Circuit Playground Express, micro:bit, PyGame and Python and runs on Windows, Mac, Linux and even the Raspberry Pi.</p>
+<p><a href="#installing-mu-on-windows">Installing on Windows</a></p>
+<p><a href="#installing-mu-on-macos">Installing on MacOS</a></p>
+<p><a href="#installing-mu-on-linux">Installing on Linux</a></p>
+<p><a href="#installing-mu-on-raspbian">Installing on Raspberry Pi</a></p>
+<h2 id="installing-mu-on-windows">Installing Mu On Windows</h2>
+<ol>
+<li>Go to <a href="https://codewith.mu/">codewith.mu</a></li>
+<li>Click on Download.</li>
+<li>Under Windows Installer click on <strong>64 bit</strong></li>
+<li>Once the installer has downloaded. Locate where the file was downloaded to (normally your Downloads folder)</li>
+<li>Double click on the file to run the installer</li>
+<li>Follow the instructions on screen.</li>
+</ol>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vsoDdOaaILs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p>You have now got Mu installed on your computer Happy Coding.</p>
+<h2 id="installing-mu-on-macos">Installing Mu On MacOS</h2>
+<ol>
+<li>open your favourite web browser</li>
+<li>In the address bar type <a href="https://codewith.mu/">codewith.mu</a></li>
+<li>Click on Download</li>
+<li>Under MacOSX installer click download. This will download the installer to your Mac</li>
+<li>Click on the Downloads folder</li>
+<li>Click on Mu.editor.dmg and follow the on screen instructions.</li>
+</ol>
+<p>Well done you have now installed the Mu Python editor on your Mac.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/JDWDlA_3HYI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h2 id="installing-mu-on-linux">Installing Mu On Linux</h2>
+<p>Each Linux distro is a bit different, so for this guide, I am going to focus on Ubuntu.</p>
+<ol>
+<li>Open up a Terminal window.</li>
+<li>Mu requires Python3. You can check and see if you have Python3 installed by typing <code>python3 --version</code> If nothing is displayed then type <code>sudo apt install python3</code> to install Python3.</li>
+<li>You also need pip3 installed type <code>pip3 --version</code> If it shows nothing you need to install pip3 by typing <code>sudo apt install python3-pip</code></li>
+<li>Finally to install Mu type <code>pip3 install mu_editor</code></li>
+<li>You can now run Mu from the command line by typing <code>Mu</code></li>
+</ol>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BsBUPBV4rAo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p>Now that you have Mu installed you can go and develop in Python3, MicroPython for micro:bit or even CircuitPython for the Adafruit Circuit Playground Express.</p>
+<h2 id="installing-mu-on-raspbian">Installing Mu On Raspbian</h2>
+<p>If you are running the latest version of Raspbian (Buster) Mu is in the recommended software menu.</p>
+<ol>
+<li>Click on the Raspberry in the top left corner to open the menu.</li>
+<li>Hover over preferences</li>
+<li>Click on Recommended Software.</li>
+<li>Click on Programming.</li>
+<li>Click on Mu and then click on OK.</li>
+</ol>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qW2hBCotvSA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p>Well done you now have Mu installed you can now write some Python code.</p>
+  </section>
+</article>
+
+</main>
+
+</div>
+
+<footer>
+  <div class="container">
+    <span class="copyright">&copy; 2022 RaspiKidd Blog. All rights reserved</span>
+  </div>
+</footer>
+
+</body>
+</html>
+

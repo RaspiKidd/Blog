@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="keywords" content="75,101,114,114,121,44,32,75,105,100,100,44,32,82,97,115,112,98,101,114,114,121,80,105,44,32,82,97,115,112,105,75,105,100,100,44,32,69,100,117,75,105,100,100,44,32,109,105,99,114,111,98,105,116,44,32,112,114,103,114,97,109,109,105,110,103,44,32,99,111,100,105,110,103,44,32,101,108,101,99,116,114,111,110,105,99,115,44,32,114,111,98,111,116,115,44,32,114,111,98,111,116,105,99,115,44,32,80,121,116,104,111,110,44,32,77,105,99,114,111,80,121,116,104,111,110,44,32,77,97,107,101,67,111,100,101,44,32,115,99,114,97,116,99,104">
+<meta name="generator" content="Hugo 0.92.1" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/css/style.css" type="text/css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700" type="text/css">
+<link rel="alternate" href="/index.xml" type="application/rss+xml" title="RaspiKidd Blog">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<title>micro:bit Radio - RaspiKidd Blog</title>
+</head>
+<body>
+
+<header>
+  <div class="container clearfix">
+    <a class="path" href="https://blog.raspikidd.com">[RaspiKidd Blog]</a>
+    <span class="caret"># _</span>
+    <div class="right">
+      
+    </div>
+  </div>
+</header>
+
+<div class="container">
+
+
+<main role="main" class="article">
+  
+<article class="single" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="meta">
+
+    <span class="key">published on</span>
+    <span class="val"><time itemprop="datePublished" datetime="2021-06-20">June 20, 2021</time></span>
+
+
+
+  </div>
+  <h1 class="headline" itemprop="headline">micro:bit Radio</h1>
+  <section class="body" itemprop="articleBody">
+    <p>This week in micro:bit Monday we are going to discover how to use the micro:bit radio.</p>
+<h2 id="makecode">MakeCode</h2>
+<ol>
+<li>open <a href="makecode.microbit.org/">MakeCode</a> within your favourite browser</li>
+<li>Click and drag the <strong>forever</strong> block to the left to delete it as we will not be using that block</li>
+<li>Click on <strong>Radio</strong> Click and drag a <strong>radio set group 1</strong> to the code area and attach it within the <strong>on start</strong> block</li>
+<li>Click on <strong>Input</strong> Click and drag a <strong>on button A pressed</strong> block to the code area</li>
+<li>Click on <strong>Basic</strong> Click on <strong>&hellip;more</strong> click and drag a <strong>clear screen</strong> block to the coding area and attach it within <strong>on button A pressed</strong> block</li>
+<li>Click on <strong>Radio</strong> Click and drag a <strong>radio send string &ldquo;&quot;</strong> block to the coding area and attach it under the <strong>clear screen</strong> block within the <strong>on button A pressed</strong> block</li>
+<li>Click within the blank space of the <strong>radio send string</strong> block and type <strong>Hello</strong></li>
+<li>Click on <strong>Radio</strong> Click and drag a <strong>on radio received receivedString</strong> block to the coding area</li>
+<li>Click on <strong>Basic</strong> Click and drag a <strong>Show String &ldquo;Hello&rdquo;</strong> block to the coding area and attach it within the <strong>on radio received receivedString</strong> block.</li>
+</ol>
+<p>Your code is now complete and ready to download to a micro:bit.</p>
+<p>Completed Code:</p>
+<p><img src="/Radio01.png" alt="Completed Code within MakeCode"></p>
+<h2 id="edublocks">EduBlocks</h2>
+<ol>
+<li>Open <a href="app.edublocks.og">EduBlocks</a> within your favourite browser and click on micro:bit</li>
+<li>Click on <strong>Basic</strong> Click and drag a **from microbit import *** block to the coding area</li>
+<li>Click on <strong>Radio</strong> Click and drag a <strong>import radio</strong> block to the code area and attach it under the **from microbit import *** block</li>
+<li>Click on <strong>Radio</strong> click and drag a <strong>radio.on()</strong> block to the coding area and attach it under the <strong>import radio</strong> block</li>
+<li>Click on <strong>Radio</strong> Click and drag a <strong>radio.config(channel=7)</strong> block to the code area and attach it under <strong>radio.on()</strong></li>
+<li>Click on  <strong>Basic</strong> Click and drag a <strong>while True:</strong> block to the code area and attach it under <strong>radio.config(channel=7)</strong> block</li>
+<li>Click on <strong>Display</strong> Click and drag a <strong>display.clear</strong> block to the coding area and attach it within the <strong>while True</strong> block</li>
+<li>Click on <strong>Basic</strong> click and drag an <strong>if True:</strong> block to the code area and attach it under <strong>display.clear</strong></li>
+<li>Click on <strong>Buttons</strong> Click and drag a <strong>button_a.is_pressed()</strong> block to the coding area and attach it within the <strong>if</strong> block where it says <strong>True</strong></li>
+<li>Click on <strong>Radio</strong> click and drag a <strong>radio.send(&ldquo;hello&rdquo;)</strong> block to the coding area and attach it within the <strong>if button_a.is_pressed()</strong> block</li>
+<li>Click on <strong>Radio</strong> click and drag a <strong>incoming=radio.receive()</strong> block to the code area and attach it under the <strong>if button_a.is_pressed():</strong> block</li>
+<li>Click on <strong>Radio</strong> Click and drag a <strong>if incoming == &ldquo;hello&rdquo;:</strong> block to the code area and attach it under the <strong>incoming=radio.received()</strong> block</li>
+<li>Click on <strong>Display</strong> Click and drag a <strong>display.scroll(&ldquo;Hello World&rdquo;)</strong> block to the coding area and attach it within the <strong>if incoming ==&ldquo;hello&rdquo;</strong> block</li>
+<li>Click on <strong>Basic</strong> Click and drag a <strong>sleep(1000)</strong> block to the code area and attach it under the <strong>if incoming == &ldquo;hello&rdquo;:</strong> block.</li>
+</ol>
+<p>Your code is now complete and ready to download.</p>
+<p>Completed Code</p>
+<p><img src="/Radio02.png" alt="Completed EduBlocks Code"></p>
+<h2 id="python">Python</h2>
+<ol>
+<li>Open your favourite micro:bit Python editor</li>
+<li>Type <code>from microbit import *</code> this impoorts the micro:bit libaray for us to communicate with the micro:bit</li>
+<li>Type <code>import radio</code> this will import the radio libaray for us to communicate with the radio on the micro:bit</li>
+<li>Type <code>radio.on()</code> This will turn the radio module on so we can interact with it</li>
+<li>Type <code>radio.config(channel=1)</code> this sets the radio channel to 1. It is important to make sure the micro:bits you are using are on the same channel. These can be numbered from 1-255.</li>
+<li>Type <code>while True:</code> This will create a loop that will run forever</li>
+<li>Type <code>dispplay.clear()</code> this clears the display on the micro:bit</li>
+<li>Type <code>if button_a.is_pressed():</code> this executes the next instuction if button a on the micro:bit is pressed</li>
+<li>Type <code>radio.send(&quot;hello&quot;)</code> This sends the message hello to another micro:bit that is listening on the same channel</li>
+<li>Type <code>incoming=radio.receive()</code> This sets a variable called incoming to radio.receive</li>
+<li>Type <code>if incoming == &quot;hello&quot;:</code> This executes the next lot of instructions if the incoming message = hello</li>
+<li>Type <code>display.scroll(&quot;Hello World&quot;)</code> this will scroll Hello World accross the micro:bit display</li>
+<li>Type <code>sleep(1000)</code> this will pause the program for 1 second.</li>
+</ol>
+<p>Your code is now complete and ready to be flashed to the micro:bit.</p>
+<h3 id="completed-code">Completed Code</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Python" data-lang="Python"><span style="color:#f92672">from</span> microbit <span style="color:#f92672">import</span> <span style="color:#f92672">*</span>
+<span style="color:#f92672">import</span> radio
+
+radio<span style="color:#f92672">.</span>on()
+
+radio<span style="color:#f92672">.</span>config(channel<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)
+
+<span style="color:#66d9ef">while</span> <span style="color:#66d9ef">True</span>:
+    display<span style="color:#f92672">.</span>clear()
+    <span style="color:#66d9ef">if</span> button_a<span style="color:#f92672">.</span>is_pressed():
+        radio<span style="color:#f92672">.</span>send(<span style="color:#e6db74">&#34;hello&#34;</span>)
+    incoming<span style="color:#f92672">=</span>radio<span style="color:#f92672">.</span>receive()
+    <span style="color:#66d9ef">if</span> incoming <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;hello&#34;</span>:
+        display<span style="color:#f92672">.</span>scroll(<span style="color:#e6db74">&#34;Hello World&#34;</span>)
+    sleep(<span style="color:#ae81ff">1000</span>)
+</code></pre></div><h2 id="challenge">Challenge</h2>
+<p>Why not send a message to your partner with your name.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>That&rsquo;s all for this week. Why not come back next week to learn about the micro:bit Pins.</p>
+  </section>
+</article>
+
+</main>
+
+</div>
+
+<footer>
+  <div class="container">
+    <span class="copyright">&copy; 2022 RaspiKidd Blog. All rights reserved</span>
+  </div>
+</footer>
+
+</body>
+</html>
+

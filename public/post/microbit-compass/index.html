@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="keywords" content="75,101,114,114,121,44,32,75,105,100,100,44,32,82,97,115,112,98,101,114,114,121,80,105,44,32,82,97,115,112,105,75,105,100,100,44,32,69,100,117,75,105,100,100,44,32,109,105,99,114,111,98,105,116,44,32,112,114,103,114,97,109,109,105,110,103,44,32,99,111,100,105,110,103,44,32,101,108,101,99,116,114,111,110,105,99,115,44,32,114,111,98,111,116,115,44,32,114,111,98,111,116,105,99,115,44,32,80,121,116,104,111,110,44,32,77,105,99,114,111,80,121,116,104,111,110,44,32,77,97,107,101,67,111,100,101,44,32,115,99,114,97,116,99,104">
+<meta name="generator" content="Hugo 0.92.1" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/css/style.css" type="text/css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700" type="text/css">
+<link rel="alternate" href="/index.xml" type="application/rss+xml" title="RaspiKidd Blog">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<title>micro:bit Compass - RaspiKidd Blog</title>
+</head>
+<body>
+
+<header>
+  <div class="container clearfix">
+    <a class="path" href="https://blog.raspikidd.com">[RaspiKidd Blog]</a>
+    <span class="caret"># _</span>
+    <div class="right">
+      
+    </div>
+  </div>
+</header>
+
+<div class="container">
+
+
+<main role="main" class="article">
+  
+<article class="single" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="meta">
+
+    <span class="key">published on</span>
+    <span class="val"><time itemprop="datePublished" datetime="2021-06-20">June 20, 2021</time></span>
+
+
+
+  </div>
+  <h1 class="headline" itemprop="headline">micro:bit Compass</h1>
+  <section class="body" itemprop="articleBody">
+    <p>Welcome to another micro:bit Monday blog post. This week we are going to look at creating a simple compass which shows the bearing from magnetic North in degrees.</p>
+<p>The built-in compass sensor is called a magnetometer. This can be used to measure the Earths magnetic field.</p>
+<p>Here is how to code it.</p>
+<h2 id="makecode">MakeCode</h2>
+<ol>
+<li>Open <a href="https://makecode.microbit.org/#editor">MakeCode</a> editor within your favourite browser</li>
+<li>Click and drag the <strong>forever</strong> block to the left and drop it in the bin</li>
+<li>Click on <strong>Basic</strong> Click and drag a <strong>show string &ldquo;Hello!&quot;</strong> block to the coding area and attach it within the <strong>on start</strong> block</li>
+<li>Click where it says <strong>Hello!</strong> and type <strong>Press button A</strong></li>
+<li>Click on <strong>Input</strong> Click and drag an <strong>on button A pressed</strong> to the coding area and drop it</li>
+<li>Click on <strong>Basic</strong> Click and drag a <strong>show number 0</strong> block to the coding area and attach it within the <strong>on button A pressed</strong> block</li>
+<li>Click on <strong>Input</strong> Click and drag a <strong>compass heading (°)</strong> block to the coding area and attach it within the <strong>0</strong> of the <strong>show number</strong> block</li>
+</ol>
+<p>Your code is now ready to download to your micro:bit and test out</p>
+<p>Completed Code</p>
+<p><img src="/Compass01.png" alt="Completed code within MakeCode"></p>
+<h2 id="edublocks">EduBlocks</h2>
+<ol>
+<li>Open <a href="http://app.edublocks.org/">EduBlocks</a> within your favourite browser and click on micro:bit</li>
+<li>Click on <strong>Basic</strong> Click on <strong>from microbit import *</strong> and drop it within  the coding area</li>
+<li>Click on <strong>Compass</strong> Click on <strong>compass.calibrate()</strong> and attach it under <strong>from microbit import *</strong></li>
+<li>Click on <strong>Display</strong> Click and drag a <strong>display.scroll(&ldquo;Hello World&rdquo;)</strong> and attach it under <strong>compass.calibrate()</strong></li>
+<li>Click on <strong>Hello World</strong> and type <strong>Press button A</strong></li>
+<li>Click on <strong>Basic</strong> Click on <strong>while True:</strong> and attach it under <strong>display.scroll(&ldquo;Hello World&rdquo;)</strong></li>
+<li>Click on <strong>Basic</strong> Click and drag an <strong>if True:</strong> block to the code area and attach it within the <strong>while True:</strong> block</li>
+<li>Click on <strong>Button</strong> Click and drag a <strong>button_a.was_pressed</strong> block to the code area and attach it within the <strong>True</strong> of the <strong>if</strong> block</li>
+<li>Click on <strong>Display</strong> Click and drag a <strong>display.scroll(0)</strong> block to the coding area and attach it within the  <strong>if button_a.was_pressed</strong></li>
+<li>Click on the <strong>0</strong> within the  <strong>display.scroll</strong> block and type <strong>str(compass.heading())</strong></li>
+</ol>
+<p>Your code is now complete and ready to download to your micro:bit to test it.</p>
+<p>Completed Code</p>
+<p><img src="/Compass02.png" alt="Completed code within EduBlocks"></p>
+<h2 id="python">Python</h2>
+<ol>
+<li>Open up your favourite Python editor for the micro:bit</li>
+<li>Type <code>from microbit import *</code> This imports the micro:bit library to use within python so we can program with the micro:bit</li>
+<li>Type <code>compass.calibrate()</code> This tells the micro:bit to calibrate the magnetometer sensor</li>
+<li>Type <code>display.scroll(&quot;Press button A&quot;)</code> This scrolls Press button A across the LED Matrix</li>
+<li>Type <code>while True:</code> This create a loop that will go on forever</li>
+<li>Type <code>if button_a.was_pressed()</code> This creates a statement to check if button A on the micro:bit was pressed</li>
+<li>Type <code>display.scroll(str(compass.heading()))</code> This will scroll the direction the compass is facing in Degrees across the display</li>
+</ol>
+<p>Your code is now ready to download to the micro:bit and test out.</p>
+<p>Completed Code</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#f92672">from</span> microbit <span style="color:#f92672">import</span> <span style="color:#f92672">*</span>
+
+compass<span style="color:#f92672">.</span>calibrate()
+
+display<span style="color:#f92672">.</span>scroll(<span style="color:#e6db74">&#34;Press button A&#34;</span>)
+
+<span style="color:#66d9ef">while</span> <span style="color:#66d9ef">True</span>:
+    <span style="color:#66d9ef">if</span> button_a<span style="color:#f92672">.</span>was_pressed()
+    display<span style="color:#f92672">.</span>scroll(str(compass<span style="color:#f92672">.</span>heading()))
+</code></pre></div><h2 id="conclusion">Conclusion</h2>
+<p>That&rsquo;s it for this week comeback next week where we discover how to use the pins on the bottom edge of the micro:bit</p>
+  </section>
+</article>
+
+</main>
+
+</div>
+
+<footer>
+  <div class="container">
+    <span class="copyright">&copy; 2022 RaspiKidd Blog. All rights reserved</span>
+  </div>
+</footer>
+
+</body>
+</html>
+

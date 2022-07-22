@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="keywords" content="75,101,114,114,121,44,32,75,105,100,100,44,32,82,97,115,112,98,101,114,114,121,80,105,44,32,82,97,115,112,105,75,105,100,100,44,32,69,100,117,75,105,100,100,44,32,109,105,99,114,111,98,105,116,44,32,112,114,103,114,97,109,109,105,110,103,44,32,99,111,100,105,110,103,44,32,101,108,101,99,116,114,111,110,105,99,115,44,32,114,111,98,111,116,115,44,32,114,111,98,111,116,105,99,115,44,32,80,121,116,104,111,110,44,32,77,105,99,114,111,80,121,116,104,111,110,44,32,77,97,107,101,67,111,100,101,44,32,115,99,114,97,116,99,104">
+<meta name="generator" content="Hugo 0.92.1" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/css/style.css" type="text/css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700" type="text/css">
+<link rel="alternate" href="/index.xml" type="application/rss+xml" title="RaspiKidd Blog">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<title>micro:bit LED Matrix - RaspiKidd Blog</title>
+</head>
+<body>
+
+<header>
+  <div class="container clearfix">
+    <a class="path" href="https://blog.raspikidd.com">[RaspiKidd Blog]</a>
+    <span class="caret"># _</span>
+    <div class="right">
+      
+    </div>
+  </div>
+</header>
+
+<div class="container">
+
+
+<main role="main" class="article">
+  
+<article class="single" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="meta">
+
+    <span class="key">published on</span>
+    <span class="val"><time itemprop="datePublished" datetime="2021-06-20">June 20, 2021</time></span>
+
+
+
+  </div>
+  <h1 class="headline" itemprop="headline">micro:bit LED Matrix</h1>
+  <section class="body" itemprop="articleBody">
+    <p>Within this post we are going to get to know what we can do with the LED matrix on the front of the micro:bit.</p>
+<p>I will include code for the MakeCode, EduBlocks and microPython editors.</p>
+<p>Lets get started!</p>
+<h2 id="displaying-text">Displaying Text</h2>
+<p>The first thing we will look at is to display text on the micro:bit, This could be used to send messages or used as a name badge.</p>
+<h3 id="makecode">MakeCode</h3>
+<p>Here is how to display text using MakeCode:</p>
+<ol>
+<li>Open the  MakeCode editor in your favourite browser <a href="https://makecode.microbit.org">MakeCode</a></li>
+<li>Delete the <strong>on start</strong> block by clicking and dragging it to the left odf the screen and dropping it on the recycle bin.</li>
+<li>Click on <strong>Basic</strong>. Click and drag a <strong>show string &ldquo;Hello!&quot;</strong> block to the code area and attach it within the <strong>forever</strong> code block.</li>
+<li>Click on <strong>Download</strong> to download the code to your computer.</li>
+<li>Plug your micro:bit into your computer using a microUSB cable.</li>
+<li>Navigate to where your code downloaded to, This will normally be the downloads folder on your computer. Copy the file to the <strong>MICROBIT drive</strong>.</li>
+</ol>
+<p>Once the code has copied to the micro:bit you will see <strong>Hello!</strong> scroll across the LED Matrix.</p>
+<p>Completed Code</p>
+<p><img src="/LEDMatrix01.png" alt="Completed code for Displaying text on a micro:bit in MakeCode"></p>
+<h3 id="edublocks">EduBlocks</h3>
+<ol>
+<li>Open the EduBlocks editor in your favourite browser <a href="http://app.edublocks.org/">EduBlocks</a></li>
+<li>Click on micro:bit.</li>
+<li>Click on <strong>Basic</strong>. Click and drag a **from microbit import *** and drop it within the coding area.</li>
+<li>Click on <strong>Basic</strong>. Click and drag a <strong>while True:</strong> block to the code area and attach it under **from microbit import ***.</li>
+<li>Click on <strong>Display</strong>. Click and drag a <strong>display.scroll(&ldquo;Hello World&rdquo;)</strong> to the coding area and attach it within the <strong>while True:</strong> block.</li>
+<li>Click on <strong>Download Hex</strong>, this will download the code to your computer.</li>
+<li>Plug your micro:bit into your computer using a microUSB cable.</li>
+<li>Navigate to where your code downloaded to, This will normally be the downloads folder on your computer. Copy the file to the <strong>MICROBIT drive</strong>.</li>
+</ol>
+<p>Once the code has copied to the micro:bit you will see <strong>Hello World</strong> scroll across the LED Matrix.</p>
+<p>Completed Code</p>
+<p><img src="/LEDMatrix02.png" alt="Completed code for displaying text on a micro:bit using EduBlocks"></p>
+<h3 id="python">Python</h3>
+<p>There are two common ways to program the micro:but using microPython. The first one is to open the web version in your browser <a href="https://python.microbit.org/v/1">Python</a> or by downloading the Mu editor from <a href="https://codewith.mu/en/download">downloading Mu</a> (within this post I am using My)</p>
+<ol>
+<li>Open your preferred method for programming Python.</li>
+<li>Type <code>from microbit import *</code> this will import the micro:bit library to use with Python and press enter.</li>
+<li>Type <code>while True:</code> this will create a while True loop meaning that the code inside it runs forever press enter.</li>
+<li>Type <code>display.scroll(&quot;Hello World&quot;)</code> This will display Hello World on the micro:bit LED matrix forever.</li>
+<li>Plug your micro:bit into your computer using a microUSB cable.</li>
+<li>Click on <strong>Flash</strong>, this will download the code to your computer (if this gives you an error click <strong>flash</strong> again and it should work).</li>
+</ol>
+<p>Completed code</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Python" data-lang="Python"><span style="color:#f92672">from</span> microbit <span style="color:#f92672">import</span> <span style="color:#f92672">*</span>
+
+<span style="color:#66d9ef">while</span> <span style="color:#66d9ef">True</span>:
+    display<span style="color:#f92672">.</span>scroll(<span style="color:#e6db74">&#34;Hello World&#34;</span>)
+</code></pre></div><h2 id="displaying-images">Displaying Images</h2>
+<p>The other thing we can use the LED matrix for is displaying images. Let’s look and see what we can do by expanding on the code above.</p>
+<h3 id="makecode-1">MakeCode</h3>
+<ol>
+<li>Click on <strong>Basic</strong>. Click and drag a <strong>show  icon</strong> block to the code area and attach it under the <strong>show string &ldquo;Hello!</strong> code block.</li>
+<li>Click on <strong>Download</strong> to download the code to your computer.</li>
+<li>Navigate to where your code downloaded to, This will normally be the downloads folder on your computer. Copy the file to the <strong>MICROBIT drive</strong>.</li>
+</ol>
+<p>Once the code has copied to the micro:bit you will see <strong>Hello!+heart</strong> scroll across the LED Matrix (see the simulator below).</p>
+<p>you can also change the icons by clicking the white arrow next to the heart.</p>
+<p>Completed Code</p>
+<p><img src="/LEDMatrix03.png" alt="Completed code to show Text and images together on a micro:bit using MakeCode"></p>
+<h3 id="edublocks-1">EduBlocks</h3>
+<ol>
+<li>Click on <strong>Display</strong>. Click and drag a <strong>display.show(Image.HAPPY)</strong> block to the code area and attach it under the <strong>display.scroll(&ldquo;Hello World&rdquo;)</strong> code block.</li>
+<li>Click on <strong>Basic</strong>. Click and drag a <strong>sleep(1000)</strong> block to the code area and attach it under <strong>display.show(Image.HAPPY)</strong></li>
+<li>Click on <strong>Download Hex</strong> to download the code to your computer.</li>
+<li>Navigate to where your code downloaded to, This will normally be the downloads folder on your computer. Copy the file to the <strong>MICROBIT drive</strong>.</li>
+</ol>
+<p>Once the code has copied to the micro:bit you will see <strong>Hello Wold +a happy face</strong> scroll across the LED Matrix (see the simulator below).</p>
+<p>you can also change the icons by typing a name of an image all in CAPS after Image. here is a list of supported Images <a href="https://microbit-micropython.readthedocs.io/en/latest/tutorials/images.html">Supported Images</a></p>
+<p>Completed Code</p>
+<p><img src="/LEDMatrix04.png" alt="Completed code to show Text and images together on a micro:bit using EduBlocks"></p>
+<h3 id="python-1">Python</h3>
+<ol>
+<li>Type <code>display.show(Image.HAPPY)</code> and press enter. This will display a picture of a happy face.</li>
+<li>Type <code>sleep (1000)</code>. This will pause your program for 1 second. If this isn&rsquo;t included your program will skip over the happy face.</li>
+<li>Click on <strong>Flash</strong> to download the code to your micro;bit.</li>
+</ol>
+<p>Once the code has copied to the micro:bit you will see <strong>Hello Wold +a happy face</strong> scroll across the LED Matrix (see the simulator below).</p>
+<p>you can also change the icons by typing a name of an image all in CAPS after Image. here is a list of supported Images <a href="https://microbit-micropython.readthedocs.io/en/latest/tutorials/images.html#">Supported Images</a></p>
+<p>Completed Code</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> microbit <span style="color:#f92672">import</span> <span style="color:#f92672">*</span>
+
+<span style="color:#66d9ef">while</span> <span style="color:#66d9ef">True</span>:
+    display<span style="color:#f92672">.</span>scroll(<span style="color:#e6db74">&#34;Hello World&#34;</span>)
+    display<span style="color:#f92672">.</span>show(Image<span style="color:#f92672">.</span>HAPPY)
+    sleep(<span style="color:#ae81ff">1000</span>)
+</code></pre></div><h2 id="challenge">Challenge</h2>
+<p>Use what you have learned within this blog post to make a custom Name badge.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>That&rsquo;s all for Today! Come back next week to learn how to use the <a href="">buttons</a>.</p>
+  </section>
+</article>
+
+</main>
+
+</div>
+
+<footer>
+  <div class="container">
+    <span class="copyright">&copy; 2022 RaspiKidd Blog. All rights reserved</span>
+  </div>
+</footer>
+
+</body>
+</html>
+
